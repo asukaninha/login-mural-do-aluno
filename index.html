@@ -5,41 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
 </head>
-<body>
-    <h1>Mural dos Alunos</h1>
+<body>>
+    <h1>Mural do Aluno</h1>
     <div class="box">
     <div id="formulario">
         <h2>Login</h2>
-        <p>Faça login para acessar o Mural do Aluno</p>
+        <p1>Faça login para acessar o Mural do Aluno</p1>
         <form action="login.php" method="post"></form>
-        <input type="text" id="email" required>
-        <label for="email">Email Corporativo</label>
+        <br>
+        <input type="text" placeholder="Email Corporativo" id="email" class="inputuser">
         <br><br>
-        <input type="password"  id="senha" required>
-        <label for="senha">Senha</label>
+        <input type="password"  placeholder="Senha" id="senha" class="inputuser" required>
         <br><br>
-        <p>Faça o cadastro caso não tenha conta</p>
-        <button>cadastro</button>
+        <button class="login">Login</button>
+        <br><br>
+        <p>Faça o cadastro caso não tenha conta:</p>
+        <button class="cadastro">Cadastro</button>
     </div>
 </body>
 <head>
    <style>
     body{
-        background-image: linear-gradient(to right, rgb(155, 186, 255) rgb(255, 255, 255));
+        background-image: linear-gradient(to right, #9bbaff #ffffff);
     }
     .box{
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
         float: right;
         position: absolute;
         left: 50%;
-        top: 25%;
+        top: 20%;
         padding: 15px;
         width: 20%;
         background-color: rgba(109, 108, 108, 0.438);
         border-radius: 15px;
     }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #5d81cf;
+        text-align: center;
+    }
     h1{
         position: absolute;
-        padding:300px;
+        padding: 100px;
+        right: 50%;
+        top: 25%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 50px;
+        color: #5d81cf;
+    }
+    p1{
+        color: #5d81cf;
+    }
+    .inputuser{
+        width: 87%;
+        border-bottom: #ffffff;
+        border-color: #ffffff;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .cadastro{
+        background-color: rgba(109, 108, 108, 0);
+        color: #5d81cf;
+        border: none;
+        cursor: pointer;
+    }
+    .login{
+        background-color: #5d81cf;
+        color: #ffffff;
+        border: #ffffff;
+        border-radius: 15px;
+        width: 100%;
+        padding: 15px;
     }
    </style>
 </head>
