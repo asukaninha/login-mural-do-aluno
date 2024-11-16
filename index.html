@@ -4,20 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
-    <main>
-        <section id="login">
-            <div id="imagem">
-
-            </div>
-            <div id="formulario">
-                <h1>Login</h1>
-                <p>Faça login para acessar o Mural do Aluno</p>
-                <form action="login.php" method="post"></form>
-            </div>
-        </section>
-    </main>
+    <h1>Mural dos Alunos</h1>
+    <div class="box">
+    <div id="formulario">
+        <h2>Login</h2>
+        <p>Faça login para acessar o Mural do Aluno</p>
+        <form action="login.php" method="post"></form>
+        <input type="text" id="email" required>
+        <label for="email">Email Corporativo</label>
+        <br><br>
+        <input type="password"  id="senha" required>
+        <label for="senha">Senha</label>
+        <br><br>
+        <p>Faça o cadastro caso não tenha conta</p>
+        <button>cadastro</button>
+    </div>
 </body>
+   <style>
+    }
+    .box{
+        position: absolute;
+        padding: 600px;
+        border-radius: 15px;
+        width: 20%;
+    }
+    h1{
+        position: absolute;
+        padding:300px;
+    }
+   </style>
+</head>
 </html>
