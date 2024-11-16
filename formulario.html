@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Mural Aluno</h1>
+    <div class="box">
+    <div id="formulario">
+        <h2>cadastro</h2>
+        <form action="cadastro.php" method="post"></form>
+        <br>
+        <input type="text" placeholder="Nome Completo" id="name" class="inputuser">
+        <br><br>
+        <input type="text"  placeholder="RA" id="RA" class="inputuser" required>
+        <br><br>
+        <label>Digito RA</label>
+        <select>
+            <option>0</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+        </select>
+        <input type="text"  placeholder="RA" id="RA" class="inputuser" required>    
+        <br><br>
+        <button class="login">Login</button>
+        <br><br>
+        <p>Faça o cadastro caso não tenha conta:</p>
+        <button class="cadastro">Cadastro</button>
+    </div>
+</body>
+<head>
+   <style>
+    body{
+        background-image: linear-gradient(to right, #9bbaff #ffffff);
+    }
+    .box{
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        float: right;
+        position: absolute;
+        left: 50%;
+        top: 20%;
+        transform: translate(-50%, -50-);
+        padding: 15px;
+        width: 20%;
+        background-color: rgba(109, 108, 108, 0.438);
+        border-radius: 15px;
+    }
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #5d81cf;
+        text-align: center;
+    }
+    h1{
+        position: absolute;
+        padding: 100px;
+        right: 50%;
+        top: 25%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 50px;
+        color: #5d81cf;
+    }
+    .inputuser{
+        width: 87%;
+        border-bottom: #ffffff;
+        border-color: #ffffff;
+        border-radius: 15px;
+        padding: 15px;
+    }
+    .cadastro{
+        background-color: rgba(109, 108, 108, 0);
+        color: #5d81cf;
+        border: none;
+        cursor: pointer;
+    }
+    .login{
+        background-color: #5d81cf;
+        color: #ffffff;
+        border: #ffffff;
+        border-radius: 15px;
+        width: 100%;
+        padding: 15px;
+        cursor: pointer;
+    }
+
+    @media screen and (max-width: 800px){
+
+    body{
+        background-image: linear-gradient(to right, #9bbaff #ffffff);
+        max-width: 800px;
+        min-width: 320px;
+    }
+    h1{
+        position: absolute;
+        top: 55%;
+        font-size: 20px;
+        left: -23%;
+        width: 100%;
+    }
+    .box{
+        font-family:Arial, Helvetica, sans-serif;
+        color: white;
+        position: relative;
+        left: 50%;
+        top: -7%;
+        transform: translate(-138%, 1%);
+        padding: 50px;
+        width: 100px;
+        height: 300px;
+        background-color: rgba(109, 108, 108, 0.438);
+        border-radius: 15px;
+    }
+    .inputuser{
+        width: 130%;
+        transform: translate(-20%,-1%);
+    } 
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #5d81cf;
+        font-size: 25px;
+    }
+    p{
+        font-size: 10px;
+        width: 100%;
+        position: absolute;
+        right: -20px;
+        top: 320px;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+    .cadastro{
+        width: 100%;
+        position: absolute;
+        right: 63px;
+        top: 350px;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+    </style>
