@@ -9,14 +9,14 @@
     <h1>Mural Aluno</h1>
     <div class="box">
     <div id="formulario">
-        <h2>cadastro</h2>
+        <h2>Cadastro</h2>
         <form action="cadastro.php" method="post"></form>
         <br>
         <input type="text" placeholder="Nome Completo" id="name" class="inputuser">
         <br><br>
-        <input type="text"  placeholder="RA" id="RA" class="inputuser" required>
+        <input type="text" placeholder="RA" id="ra" class="inputuser" required>
         <br><br>
-        <label>Digito RA</label>
+        <label class="labelinput">Digito RA</label>
         <select>
             <option>0</option>
             <option>1</option>
@@ -29,12 +29,49 @@
             <option>8</option>
             <option>9</option>
         </select>
-        <input type="text"  placeholder="RA" id="RA" class="inputuser" required>    
         <br><br>
-        <button class="login">Login</button>
+        <input type="date"  placeholder="Data de Nascimento" id="date" class="date" required>    
         <br><br>
-        <p>Faça o cadastro caso não tenha conta:</p>
-        <button class="cadastro">Cadastro</button>
+        <label class="labelinput">UF</label>
+        <select>
+            <option>RP</option>
+            <option>AC</option>
+            <option>AM</option>
+            <option>PR</option>
+            <option>PA</option>
+            <option>AP</option>
+            <option>TO</option>
+            <option>MA</option>
+            <option>PI</option>
+            <option>CE</option>
+            <option>RN</option>
+            <option>PB</option>
+            <option>PE</option>
+            <option>AL</option>
+            <option>SE</option>
+            <option>BA</option>
+            <option>MG</option>
+            <option>ES</option>
+            <option>RJ</option>
+            <option>SP</option>
+            <option>PR</option>
+            <option>SC</option>
+            <option>RS</option>
+            <option>MS</option>
+            <option>MT</option>
+            <option>GO</option>
+            <option>DF</option>
+        </select>
+        <br><br>
+        <input type="text" placeholder="Cidade" id="city" class="inputuser" required>
+        <br><br>
+        <input type="text" placeholder="Escola" id="school" class="inputuser" required>
+        <br><br>
+        <input type="text" placeholder="Email" id="email" class="inputuser">
+        <br><br>
+        <input type="text" placeholder="Crie uma senha" id="senha" class="inputuser">
+        <br><br>
+        <button class="cadastrar">Cadastrar</button>
     </div>
 </body>
 <head>
@@ -48,7 +85,7 @@
         float: right;
         position: absolute;
         left: 50%;
-        top: 20%;
+        top: 12.5%;
         transform: translate(-50%, -50-);
         padding: 15px;
         width: 20%;
@@ -70,12 +107,13 @@
         color: #5d81cf;
     }
     .inputuser{
-        width: 87%;
-        border-bottom: #ffffff;
-        border-color: #ffffff;
-        border-radius: 15px;
-        padding: 15px;
-    }
+        background: none;
+        border: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        border-bottom: 1px solid white ;
+    } 
     .cadastro{
         background-color: rgba(109, 108, 108, 0);
         color: #5d81cf;
@@ -90,6 +128,29 @@
         width: 100%;
         padding: 15px;
         cursor: pointer;
+    }
+    .labelinput{
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 15px;
+        width: 100%;
+    }
+    .date{
+        background: none;
+        border: none;
+        color: gray;
+        font-size: 15px;
+        width: 100%;
+    }
+    .cadastrar{
+        background-color: #5d81cf;
+        color: #ffffff;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 15px;
     }
 
     @media screen and (max-width: 800px){
@@ -120,8 +181,11 @@
         border-radius: 15px;
     }
     .inputuser{
-        width: 130%;
-        transform: translate(-20%,-1%);
+        background: none;
+        border: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
     } 
     h2{
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -144,5 +208,14 @@
         top: 350px;
         transform: translateY(-50%);
         padding: 10px;
+    }
+    .button{
+        background-color: #5d81cf;
+        color: #ffffff;
+        border: none;
+        padding: 15px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 15px;
     }
     </style>
