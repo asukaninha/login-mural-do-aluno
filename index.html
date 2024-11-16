@@ -10,7 +10,6 @@
     <div class="box">
     <div id="formulario">
         <h2>Login</h2>
-        <p1>Faça login para acessar o Mural do Aluno</p1>
         <form action="login.php" method="post"></form>
         <br>
         <input type="text" placeholder="Email Corporativo" id="email" class="inputuser">
@@ -55,9 +54,6 @@
         font-size: 50px;
         color: #5d81cf;
     }
-    p1{
-        color: #5d81cf;
-    }
     .inputuser{
         width: 87%;
         border-bottom: #ffffff;
@@ -90,7 +86,7 @@
     }
     h1{
         position: absolute;
-        top: 63%;
+        top: 55%;
         font-size: 20px;
         left: -23%;
         width: 100%;
@@ -101,18 +97,37 @@
         position: relative;
         left: 50%;
         top: -7%;
-        transform: translate(-100%, 1%);
+        transform: translate(-138%, 1%);
         padding: 50px;
         width: 100px;
-        height: 350px;
+        height: 300px;
         background-color: rgba(109, 108, 108, 0.438);
         border-radius: 15px;
     }
     .inputuser{
+        width: 130%;
+        transform: translate(-20%,-1%);
+    } 
+    h2{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #5d81cf;
+        font-size: 25px;
+    }
+    p{
+        font-size: 10px;
         width: 100%;
-        border-bottom: #ffffff;
-        border-color: #ffffff;
-        border-radius: 15px;
-        padding: 15px;
+        position: absolute;
+        right: -20px;
+        top: 320px;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+    .cadastro{
+        width: 100%;
+        position: absolute;
+        right: 63px;
+        top: 350px;
+        transform: translateY(-50%);
+        padding: 10px;
     }
     </style>
